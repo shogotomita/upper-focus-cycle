@@ -1,5 +1,12 @@
 # Lessons
 
+## 2026-08-25 — デッド後のロウは DL% を低く取る
+
+ベントオーバーロウをデッド1RMの48%にすると、体重74・デッド175で週1から85kgになり、デッド直後・体幹平行の補助としては重すぎる。
+
+- 厳格ロウ（床平行・反動なし・デッド後）の基準はおおよそ DL 1RM の **40%** 前後
+- 「補助なのにメイン並みに追い込む」％は避ける。メモの「重量より軌道」と％が矛盾しないこと
+
 ## 2026-08-24 — setState updater 内で event.currentTarget を読まない
 
 1RM の `onChange` で `setRms((prev) => … event.currentTarget.value)` とすると、updater 実行時に `currentTarget` が null で TypeError。

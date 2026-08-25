@@ -389,7 +389,7 @@ const ACCESSORIES: AccDef[] = [
     sets: { mav: 4, build: 4, mrv: 4, deload: 2 },
     reps: { 1: "8", 2: "8", 3: "6-8", 4: "6" },
     load: (rms, week) => {
-      const kg = accessoryLoad(percentOf(rms.deadlift, 0.48), week);
+      const kg = accessoryLoad(percentOf(rms.deadlift, 0.4), week);
       return { kg, display: formatKg(kg) };
     },
   },
