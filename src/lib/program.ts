@@ -30,7 +30,7 @@ export const DEFAULT_RMS: OneRMs = {
   bench: 125,
   squat: 175,
   deadlift: 175,
-  ohp: 80,
+  ohp: 60,
   bodyweight: 74,
 };
 
@@ -373,7 +373,7 @@ const ACCESSORIES: AccDef[] = [
     sets: { mav: 3, build: 3, mrv: 4, deload: 2 },
     reps: { 1: "12", 2: "10-12", 3: "10", 4: "10" },
     load: (rms, week) => {
-      const kg = accessoryLoad(percentOf(rms.deadlift, 0.74), week);
+      const kg = accessoryLoad(percentOf(rms.deadlift, 0.285), week);
       return { kg, display: formatKg(kg) };
     },
   },
@@ -389,7 +389,7 @@ const ACCESSORIES: AccDef[] = [
     sets: { mav: 4, build: 4, mrv: 4, deload: 2 },
     reps: { 1: "8", 2: "8", 3: "6-8", 4: "6" },
     load: (rms, week) => {
-      const kg = accessoryLoad(percentOf(rms.deadlift, 0.4), week);
+      const kg = accessoryLoad(percentOf(rms.deadlift, 0.285), week);
       return { kg, display: formatKg(kg) };
     },
   },
@@ -434,7 +434,7 @@ const ACCESSORIES: AccDef[] = [
     sets: { mav: 3, build: 3, mrv: 4, deload: 2 },
     reps: { 1: "15", 2: "12", 3: "12", 4: "10" },
     load: (rms, week) => {
-      const kg = accessoryLoad(percentOf(rms.deadlift, 0.7), week);
+      const kg = accessoryLoad(percentOf(rms.deadlift, 0.27), week);
       return { kg, display: formatKg(kg) };
     },
   },
@@ -579,7 +579,7 @@ const ACCESSORIES: AccDef[] = [
     sets: { mav: 3, build: 3, mrv: 4, deload: 2 },
     reps: { 1: "12", 2: "12", 3: "10", 4: "10" },
     load: (rms, week) => {
-      const kg = accessoryLoad(percentOf(rms.deadlift, 0.7), week);
+      const kg = accessoryLoad(percentOf(rms.deadlift, 0.27), week);
       return { kg, display: formatKg(kg) };
     },
   },
@@ -674,7 +674,7 @@ const ACCESSORIES: AccDef[] = [
     sets: { mav: 3, build: 3, mrv: 4, deload: 2 },
     reps: { 1: "12", 2: "12", 3: "10", 4: "8" },
     load: (rms, week) => {
-      const kg = accessoryLoad(percentOf(rms.deadlift, 0.72), week);
+      const kg = accessoryLoad(percentOf(rms.deadlift, 0.285), week);
       return { kg, display: formatKg(kg) };
     },
   },
